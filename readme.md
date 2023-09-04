@@ -11,9 +11,9 @@ import getWeakRef from "weak-ref-cache";
 
 const myObj = {};
 
-const myObjWeakRef0 = getWeakRef(myObject);
+const myObjWeakRef0 = getWeakRef(myObj);
 
-const myObjWeakRef1 = getWeakRef(myObject);
+const myObjWeakRef1 = getWeakRef(myObj);
 
 if (myObjWeakRef0 === myObjWeakRef1) {
   console.log("Pass!");
