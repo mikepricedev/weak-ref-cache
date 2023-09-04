@@ -1,0 +1,19 @@
+{
+  "name": "weak-ref-cache",
+  "version": "0.0.1",
+  "description": "Returns the same unique WeakRef instance per object.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "WeakRef",
+    "Cache"
+  ],
+  "author": "Michael Price <mikepricedev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
