@@ -4,9 +4,10 @@
   "description": "Returns the same unique WeakRef instance per object.",
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "vitest --run && npm run type-check",
-    "type-check": "tsc --lib es2022 --strict --noEmit --checkJs index.js"
+    "type-check": "tsc --lib es2022 --strict --noEmit --checkJs index.js index.d.ts"
   },
   "keywords": [
     "WeakRef",
@@ -21,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mikepricedev/weak-ref-cache.git"
+  },
+  "dependencies": {
+    "weak-ref-cache": "^1.0.1"
   }
 }
