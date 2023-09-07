@@ -1,6 +1,6 @@
 {
   "name": "weak-ref-cache",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Returns the same unique WeakRef instance per object.",
   "type": "module",
   "main": "index.js",
@@ -22,8 +22,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mikepricedev/weak-ref-cache.git"
-  },
-  "dependencies": {
-    "weak-ref-cache": "^1.0.1"
   }
 }
