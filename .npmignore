@@ -1,2 +1,5 @@
 .DS_Store
-index.ts
+
+index.test.js
+
+tsconfig.json

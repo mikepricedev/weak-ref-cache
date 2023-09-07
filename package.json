@@ -2,11 +2,11 @@
   "name": "weak-ref-cache",
   "version": "1.0.0",
   "description": "Returns the same unique WeakRef instance per object.",
-  "main": "index.js",
   "type": "module",
-  "types": "index.d.ts",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "vitest --run && npm run type-check",
+    "type-check": "tsc --lib es2022 --strict --noEmit --checkJs index.js"
   },
   "keywords": [
     "WeakRef",
@@ -15,7 +15,8 @@
   "author": "Michael Price <mikepricedev@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3"
   },
   "repository": {
     "type": "git",
