@@ -1,6 +1,6 @@
 {
   "name": "weak-ref-cache",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Returns the same unique WeakRef instance per object.",
   "type": "module",
   "exports": {
