@@ -3,9 +3,13 @@
   "version": "1.0.3",
   "description": "Returns the same unique WeakRef instance per object.",
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "types": "index.d.ts",
   "scripts": {
+    "build": "tsc && mv ./.build/index.js ./index.cjs && mv ./.build/index.d.ts ./ && rm -r .build",
     "test": "vitest --run && npm run type-check",
     "type-check": "tsc --lib es2022 --strict --noEmit --checkJs index.js index.d.ts"
   },
